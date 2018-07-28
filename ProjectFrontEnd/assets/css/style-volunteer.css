@@ -1,0 +1,48 @@
+.block-content p{
+	padding: 50px 50px 50px 50px;
+	text-align: center;
+	font-size: 30px;
+
+}
+
+.contain .block-content img{
+	position: relative;
+	width: 100%;
+	height: auto;
+
+}
+
+.volunteer {
+	position: center;
+	background-color: lavender;
+	height: 1100px;
+	width: 1050px;
+
+
+	
+}
+ 
+.volunteer h1{
+	bottom: 20px;
+	text-align: center;
+	
+}
+
+.but3 {
+    background-color: #D0CFCF; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    top: 180px;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+
+   
+}

@@ -1,0 +1,75 @@
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 50px 8px;
+}
+
+
+ .centered {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 100%;}
+
+    .thumbnail>img {
+     display:block; 
+     width:100%; 
+     height:auto;
+}
+
+.but {
+    background-color: #D0CFCF; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    top: 180px;
+    border-radius: 10px;
+}
+
+
+.featured-content__subhead{
+    font-size: 1.2rem;
+    /*line-height: 1.5;*/
+	margin-bottom: 1.2rem;
+	text-align: center;
+	padding: 10px 50px;
+
+}
+
+.donation {
+	background-color: lavender;
+
+	
+}
+ 
+.donation h1{
+	bottom: 20px;
+	text-align: center;
+	
+}
+
+.button-donate{
+        margin-left: 45%;
+        background-color: #5DADE2; 
+        border-color: #5DADE2;
+}
+.container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 1px 150px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

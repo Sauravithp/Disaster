@@ -1,0 +1,13 @@
+.form-border{
+  border:1px solid #808080;
+}
+.form-divider{
+  border-top: 1px solid #D3D3D3;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+  }
+
+  .form-width{
+    width: 100%;
+  }

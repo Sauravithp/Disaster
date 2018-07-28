@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disaster Management System</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/index.js">
+
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-dark">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<!-- Trigger/Open The Modal -->
+					<a class="nav-link active" href="#"><button id="myBtn" type="button" class="btn btn-outline-light">Sign In</button></a>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						
+						<div class="modal-content">
+							
+							<span class="close text-right">&times;</span>
+
+							<div class="modal-body">
+								<h1 class="font-regular text-align text-color">Sign In</h1>
+								<form class="login100-form validate-form text-align">
+									<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+										<span class="label-input100 text-color"><i class="fa fa-user border text-color"></i></span>
+										<input class="input100" type="text" name="username" placeholder="  Enter username">
+										<span class="focus-input100"></span>
+									</div>
+
+									<div class="wrap-input100 validate-input m-b-18 top-padding" data-validate = "Password is required">
+										<span class="label-input100 text-color"><i class="fa fa-lock border text-color"></i></span>
+										<input class="input100" type="password" name="pass" placeholder="  Enter password">
+										<span class="focus-input100"></span>
+									</div>
+
+									<div class="flex-sb-m w-full p-b-30">
+										<div class="contact100-form-checkbox">
+											<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+											<label class="label-checkbox100 text-color" for="ckb1">
+												Remember me
+											</label>
+										</div>
+
+										<div>
+											<a href="#" class="txt1">
+												Forgot Password?
+											</a>
+										</div>
+									</div>
+
+									<div class="container-login100-form-btn">
+										<button class="login100-form-btn">
+											Sign In
+										</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#"><button id="myBtn2" type="button" class="btn btn-outline-light">Sign Up</button></a>
+		<!-- The Modal -->
+					<div id="myModal2" class="modal2">
+
+						<!-- Modal content -->
+						
+						<div class="modal-content">
+							
+							<span class="close close2 text-right">&times;</span>
+
+							<div class="modal-body">
+								<h1 class="font-regular text-align text-color">Sign Up</h1>
+								<form class="login100-form validate-form text-align">
+									<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+										<span class="label-input100 text-color"><i class="fa fa-user border text-color"></i></span>
+										<input class="input100" type="text" name="username" placeholder="  Enter username">
+										<span class="focus-input100"></span>
+									</div>
+
+									<div class="wrap-input100 validate-input m-b-18 top-padding" data-validate = "Password is required">
+										<span class="label-input100 text-color"><i class="fa fa-lock border text-color"></i></span>
+										<input class="input100" type="password" name="pass" placeholder="  Enter password">
+										<span class="focus-input100"></span>
+									</div>
+
+									<div class="flex-sb-m w-full p-b-30">
+										<div class="contact100-form-checkbox">
+											<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+											<label class="label-checkbox100 text-color" for="ckb1">
+												Remember me
+											</label>
+										</div>
+
+										<div>
+											<a href="#" class="txt1">
+												Forgot Password?
+											</a>
+										</div>
+									</div>
+
+									<div class="container-login100-form-btn">
+										<button class="login100-form-btn">
+											Sign Up
+										</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="Register.html"><button id="myBtn" type="button" class="btn btn-outline-light">Register Disaster</button></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="full-body">
+		<nav class="navbar navbar-expand-sm navbar-dark nav-padding nav-background">
+			<a class="navbar-brand" href="#"><img src="image/logo3.png" width="150" height="150"></a>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Organizations
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">NGO</a>
+							<a class="dropdown-item" href="#">INGO</a>
+							<a class="dropdown-item" href="#">Local Clubs</a>
+							<a class="dropdown-item" href="#">Others</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="volunteer.html">Volunteers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="donate.html">Donate</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="contact.html">Contact Us</a>
+				</li>
+				<li class="nav-item">	
+					<div id="searchwrap">
+						<li id="search">
+							<form id="search" name="search" action="/products" method="get">
+								<input id="search-input" name="search" type="text">
+								<button type="button" class="btn btn-primary button-search"><i class="fa fa-search"></i></button>
+							</form>
+						</li>
+					</div>	
+				</li>
+			</ul>
+		</nav>
+		<section class="home-content text-color full-body">
+			<div class="divider font-regular">
+				<h2>Open Source Disaster Relief Management System</h2>
+			</div>
+			<p class="text-align top-padding font-light">Making high quality disaster relief management systems for response, recovery and resilience-building accessible to all.<p>
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="disaster-listings">
+							<h1 class="font-light text-align top-padding">Nepal is prone to Disasters.Every year people become its victims.</h1>
+							<div>
+								<h1 class="font-robo-light heading top-padding">Earthquake</h1>
+								<p>The federal democratic republic of Nepal is located at the boundary between Indian and Tibetan tectonic plates and therefore lies in a seismically active region.Historical data has shown that the country witnessed three major earthquakes in 20th century namely Bihar-Nepal earthquake (1934), Bajhang earthquake (1980) and Udayapur earthquake (1988). According to Global Report on Disaster Risk, Nepal ranks the 11th position in terms of earthquake risk as earthquakes have often occurred in Nepal.</p>
+								<div class=" row row-image">
+									<div class="col-sm-6 container">
+										<img src="image/eq1.jpg" alt="Avatar" class="image">
+
+									</div>
+									<div class="col-sm-6 container">
+										<img src="image/eq2.jpg" alt="Avatar" class="image">
+
+									</div>	
+								</div>
+								<div class=" row row-image">
+									<div class="col-sm-6 container">
+										<img src="image/eq3.jpg" alt="Avatar" class="image">
+
+									</div>
+									<div class="col-sm-6 container">
+										<img src="image/eq4.jpg" alt="Avatar" class="image">
+
+									</div>	
+								</div>
+								<a href="http://www.seismonepal.gov.np/" target="_blank">Recent Earthquakes In Nepal</a>
+							</div>
+
+						</div>
+						<div>
+							<h1 class="font-robo-light heading top-padding">Landslide</h1>
+							<p>A significant number of landslides estimated at over 12,000 occur each year.A UN Report (2008) shows that of the 75 districts in the country,49 are prone to landslides.Floods and landslides are often interrelated in Nepal.Some landslides are triggered by riverbank erosion, and some flash floods are aggravated by landslides in the areas adjoining riverbanks. Both these phenomena occur during the monsoon season.Man made factors responsible for landsides are intensive deforestation, improper agriculture and irrigation practices, overgrazing on the slopes, quarrying for construction materials, and construction of infrastructure beyond the bearing capacities of the hill slopes. Landslides frequently occur in the monsoon season following an earthquake.</p>
+							<div class=" row row-image">
+								<div class="col-sm-6 container">
+									<img src="image/ls1.jpg" alt="Avatar" class="image">
+
+								</div>
+								<div class="col-sm-6 container">
+									<img src="image/ls2.jpg" alt="Avatar" class="image">
+
+								</div>	
+							</div>
+							<div class=" row row-image">
+								<div class="col-sm-6 container">
+									<img src="image/ls3.jpg" alt="Avatar" class="image">
+
+								</div>
+								<div class="col-sm-6 container">
+									<img src="image/ls4.jpg" alt="Avatar" class="image">
+
+								</div>	
+							</div>
+						</div>
+						<div>
+							<h1 class="font-robo-light heading top-padding">Flood</h1>
+							<p>Flood is a common in the rainy season in Nepal, and has been most frequent, highly damaging and wide spread natural hazards. It is estimated that more than 6,000 rivers and rivulets are in Nepal flowing from north to south. Among these, snow fed rivers, such as the Koshi, Narayani, Karnali, and Mahakali, are perennial rivers. They originate from the Himalayas and snow capped mountains and pass through the hills to the Terai plains. During the monsoon (June-September), these rivers swell and cause damage to the villages, crops lands, and people and livestock remained within the river basins. Historical data has shown that, Nepal witnessed major flood in Tinao basin (1978), Koshi River (1980), Tadi River Basin (1985), Sunkoshi Basin (1987) and devastating cloud burst in Kulekhani area (1993) which alone claimed the lives of 1336 people.</p>
+							<div class=" row row-image">
+								<div class="col-sm-6 container">
+									<img src="image/fd1.jpg" alt="Avatar" class="image">
+
+								</div>
+								<div class="col-sm-6 container">
+									<img src="image/fd2.jpg" alt="Avatar" class="image">
+
+								</div>	
+							</div>
+							<div class=" row row-image">
+								<div class="col-sm-6 container">
+									<img src="image/fd3.jpg" alt="Avatar" class="image">
+
+								</div>
+								<div class="col-sm-6 container">
+									<img src="image/fd4.jpg" alt="Avatar" class="image">
+
+								</div>	
+							</div>
+						</div>
+						<div>
+							<h1 class="font-robo-light heading top-padding">Cold Wave</h1>
+							<p>Winter for Nepalese is all about biting cold and life frozen all around. In the last three years alone, at least 45 people have died due to severe cold. The impact of winter is much severe in the Tarai belt where thick blanket of cold waves grip the lives of millions of people year after year. 
+							Enveloped in mist and dust particles, the lingering layers of cold wave result in the marked cooling of air.For the past few years, cold wave has become one of the major threats to the lives of locals residing in 23 districts in Tarai. The annual death toll and its impact on human lives have clearly proven the dangers posed by cold waves over the years. As per the record of National Emergency Operation Center (NEOC), the department under the Ministry of Home Affairs, cold wave over the past three years has already claimed the lives of 46 people across 15 districts. Most of the human casualties were reported from the districts in the Terai belt. </p>
+							<div class=" row row-image">
+								<div class="col-sm-6 container">
+									<img src="image/cw1.jpg" alt="Avatar" class="image">
+
+								</div>
+								<div class="col-sm-6 container">
+									<img src="image/cw2.jpg" alt="Avatar" class="image">
+
+								</div>	
+							</div>
+							<div class=" row row-image">
+								<div class="col-sm-6 container">
+									<img src="image/cw3.jpg" alt="Avatar" class="image">
+
+								</div>
+								<div class="col-sm-6 container">
+									<img src="image/cw4.jpg" alt="Avatar" class="image">
+
+								</div>	
+							</div>
+						</div>
+						
+					</div>	
+
+					<div class="col-sm-4">
+						<div class="side-bar">
+							<h1 class=" top-padding font-robo-regular text-align color-blue">Recent Posts</h1>
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										
+										<a href="http://kathmandupost.ekantipur.com/news/2018-07-13/heavy-rains-inundate-bhaktapur.html" target="_blank" ><img class="d-block w-100 thumbnail" src="image/sd0.jpg" alt="First slide">
+											<div class="carousel-caption">
+												<p>Torrential rain-triggered floods inundate Bhaktapur</p>
+											</div></a>
+										</div>
+										<div class="carousel-item ">
+
+											<a href="http://english.onlinekhabar.com/landslide-obstructs-narayangadh-muglin-road-yet-again.html" target="_blank" ><img class="d-block w-100 thumbnail" src="image/sd1.jpg" alt="First slide">
+												<div class="carousel-caption">
+													<p>Landslide obstructs Narayangadh-Muglin road yet again</p>
+												</div></a>
+											</div>
+											<div class="carousel-item">
+												<a href="https://kathmandupost.ekantipur.com/news/2018-05-15/manthali-floods-sweep-away-girl-19-as-debris-flows-into-homes-and-shops.html" target="_blank" ><img class="d-block w-100 thumbnail" src="image/sd2.jpg" alt="Second slide">
+													<div class="carousel-caption">
+														<p>Manthali floods sweep away girl, 19, as debris flows into homes and shops</p>
+													</div></a>
+												</div>
+												<div class="carousel-item">
+													<a href="https://www.bbc.com/news/world-asia-32479909" target="_blank" ><img class="d-block w-100 thumbnail" src="image/sd3.jpg" alt="Third slide">
+														<div class="carousel-caption">
+															<p>Nepal 2015 earthquakes: Devastation in maps and images</p>
+														</div></a>
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="About font-regular text-align">
+												<h1 class="top-padding font-robo-regular top-padding color-blue">About Us</h1>
+												<p class="top-padding">The Disaster Relief Management is dedicated to the mission of saving lives by providing relief and information management solutions that enable organizations and communities to better respond to disasters aftermath. We develop free and open source software and provide services that help solve concrete problems and bring efficiencies to disaster response coordination between aid organizations, civil society and the victims themselves.</p>
+											</div>
+											<div class="Why font-regular text-align">
+												<h1 class="font-robo-regular top-padding color-blue">What is our Motive?</h1>
+												<p class="top-padding">Disaster is inenvitable and beyond humans' control.Every year many lives are lost and seriously affected when disasters occur.There are two categories of people:One who are affected and the other are the ones wanting to help the victims.And we are working to build a reliable bridge between the two of them.People can lend helping hands to one another through us.</p>
+											</div>
+											<div class="container subscription text-align">
+												<h1 class="font-robo-regular top-padding color-blue">Subscribe Here!</h1>
+												<p class="top-padding font-regular">To get latest updates about disasters happening in Nepal.</p>
+												<form id="subscribe" class="form-inline form-padding" role="form">
+													<label for="email2" class="mb-2 mr-sm-2">Email:</label>
+													<input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email">
+
+
+													<button type="button" class="btn btn-primary mb-2 button-submit">Submit</button>
+												</form>
+											</div>
+											<div class="disaster-data">
+												<h1 class="font-robo-regular text-align top-padding color-blue">Disasters Data </h1>
+												<ul>
+													<li>
+														<a href="http://www.neoc.gov.np/uploads/news/file/Bulletin%202075_20180706125557.pdf" target="_blank">Disaster Data from 2075 Baishakh 01 to Asar 21th</a></li><br><br>
+														<li><a href="http://www.neoc.gov.np/uploads/news/file/Daily%20Disaster%20Record%202074_20180427010944.pdf" target="_blank">Disaster Data from 2074 Baishakh 01 to Chait 30th</a></li><br><br>
+														<li><a href="http://www.neoc.gov.np/uploads/news/file/Seven%20year%20data_20180427010733.pdf" target="_blank">Disaster Data of Nepal from 2068 B.S-2074 B.S</a></li><br><br>
+														<li><a href="http://www.neoc.gov.np/uploads/news/file/Bulletin%202073_20170412113152.pdf" target="_blank">Disaster Data from 2073 Baishakh 01 to Chait 30th</a></li><br><br>
+													</ul>
+												</div>
+												<iframe width="330" height="250" src="https://www.youtube.com/watch?v=9h9EdWopTi0?autoplay=1">
+												</iframe>
+											</div>
+										</div>
+									</div>
+								</section>
+							</section>
+							<footer>
+								<div class="container text-center padding-top">
+									<div class="social-media">
+										<a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook img-border"></i></a>
+										<a href="https://www.twitter.com/" target="_blank"> <i class="fa fa-twitter img-border"></i></a>
+										<a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus img-border"></i></a>
+										<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin img-border"></i></a>
+									</div>
+									<div class="container Copyright-text"></div>
+									<p class="font-semibold">Disaster Relief Management, Red Cross Road, Kalimati,
+										PO Box:12294,Kathmandu Nepal
+										Phone: 977-1-4672165, 6226613
+										Fax: 977-1-4672165
+									Email:disasterrelief@.org.np</p>
+									<p class="font-bold">  Copyright © 2018. All Rights Reserved.</p>
+									<p class="font-bold"> Design & Developed By : Computer Engineering Students of KEC</p>
+								</div>
+							</footer>
+							<script src="assets/js/jquery.min.js"></script>
+							<script src="assets/js/bootstrap.min.js"></script>
+							<script src="assets/js/index.js"></script>
+						</body>
+
+						</html>	
